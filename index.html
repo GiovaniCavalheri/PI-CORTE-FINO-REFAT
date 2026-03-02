@@ -26,8 +26,10 @@
       rel="stylesheet"
     />
   </head>
-  <body>
-    <!-- HEADER TOP - Informações de contato -->
+
+  <!-- TOPO FIXO header-top  navbar juntos -->
+  <header id="topo-fixo" class="sticky-top">
+    <!-- HEADER TOP -->
     <div class="header-top">
       <div class="container">
         <i class="fas fa-phone"></i> (18) 4002-8922
@@ -36,30 +38,65 @@
       </div>
     </div>
 
-    <!-- HEADER PRINCIPAL - Logo e Navegação -->
-    <header class="main-header">
+    <!-- NAVBAR BOOTSTRAP -->
+    <nav class="navbar navbar-expand-lg main-header">
       <div class="container">
-        <div class="logo-area">
+        <a class="navbar-brand logo-area" href="/index.html">
           <img
             class="img-header-logo"
             src="/src/public/logo-c-f.png"
-            alt="Icone da Logo Açougue Corte fino, com cores vibrantes em bege e vermelho, representando um machado cortando um pedaço de carne "
+            alt="Logo Açougue Corte Fino"
           />
           <h1>Corte Fino</h1>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menuPrincipal"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+          <ul class="nav nav-pills ms-auto">
+            <li class="nav-item">
+              <a href="/index.html" class="nav-link active" aria-current="page"
+                >Início</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="/src/Interface/products.html" class="nav-link"
+                >Produtos</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="/src/Interface/offers.html" class="nav-link">Ofertas</a>
+            </li>
+            <li class="nav-item">
+              <a href="/src/Interface/about.html" class="nav-link">Sobre Nós</a>
+            </li>
+            <li class="nav-item">
+              <a href="/src/Interface/services.html" class="nav-link"
+                >Serviços</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="/src/Interface/contact.html" class="nav-link">Contato</a>
+            </li>
+            <li class="nav-item">
+              <a
+                href="/src/Interface/Join.html"
+                class="nav-link destaque-vermelho"
+                >Entrar</a
+              >
+            </li>
+          </ul>
         </div>
-
-        <nav class="main-nav">
-          <a href="./index.html">Início</a>
-          <a href="/src/Interface/products.html">Produtos</a>
-          <a href="/src/Interface/offers.html">Ofertas</a>
-          <a href="/src/Interface/about.html">Sobre Nós</a>
-          <a href="/src/Interface/services.html">Serviços</a>
-          <a href="/src/Interface/contact.html">Contato</a>
-          <a href="/src/Interface/Join.html" class="destaque-vermelho">Entrar</a>
-        </nav>
       </div>
-    </header>
+    </nav>
+  </header>
 
+  <body>
     <!-- SEÇÃO HERO - Conteúdo principal -->
     <section class="hero-section">
       <div class="container">
