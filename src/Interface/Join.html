@@ -88,55 +88,71 @@
   </nav>
 
   <body>
-    <section class="secao-login">
-      <div class="container-login">
-        <!-- LOGO -->
-        <img
-          src="../assets/logo-c-f.png"
-          alt="Logo Corte Fino"
-          class="login-logo"
-        />
+    <section class="secao-login d-flex justify-content-center align-items-center min-vh-100 py-5">
+  <div class="container-login text-center">
 
-        <!-- CARD -->
-        <div class="card-login">
-          <h2 class="titulo-login">Área do Cliente</h2>
-          <p class="descricao-login">
-            Entre com suas credenciais para acessar sua conta
-          </p>
+    <!-- LOGO -->
+    <img src="../public/logo-c-f.png" alt="Logo Corte Fino" class="login-logo w-75 mb-3">
 
-          <!-- FORM -->
-          <form class="form-login">
-            <label for="email">E-mail</label>
-            <input
-              type="email"
-              id="email"
-              placeholder="seu@email.com"
-              required
-            />
+    <!-- CARD -->
+    <div class="card-login shadow p-4 rounded mx-auto" style="max-width:380px;">
 
-            <div class="linha-input">
-              <label for="senha">Senha</label>
-              <a href="#" class="link-esqueci">Esqueceu a senha?</a>
-            </div>
+      <h2 class="titulo-login fw-bold fs-4">Área do Cliente</h2>
 
-            <input type="password" id="senha" placeholder="********" required />
+      <p class="descricao-login mb-4">
+        Entre com suas credenciais para acessar sua conta
+      </p>
 
-            <button type="submit" class="btn-login">Entrar</button>
-          </form>
+      <!-- FORM -->
+      <form class="form-login text-start">
 
-          <p class="texto-cadastro">
-            Não tem uma conta?
-            <a href="#" class="link-cadastro">Cadastre-se</a>
-          </p>
+        <label for="email" class="form-label">E-mail</label>
+
+        <input
+          type="email"
+          id="email"
+          placeholder="seu@email.com"
+          class="form-control mb-3"
+          required
+        >
+
+        <div class="linha-input d-flex justify-content-between align-items-center">
+          <label for="senha" class="form-label mb-0">Senha</label>
+          <a href="#" class="link-esqueci text-decoration-none">Esqueceu a senha?</a>
         </div>
 
-        <p class="texto-termos">
-          Ao fazer login, você concorda com nossos
-          <a href="#">Termos de Uso</a> e
-          <a href="#">Política de Privacidade</a>
-        </p>
-      </div>
-    </section>
+        <input
+          type="password"
+          id="senha"
+          placeholder="********"
+          class="form-control mb-3"
+          required
+        >
+
+        <button type="submit" class="btn-login btn w-100 mt-2">
+          Entrar
+        </button>
+
+      </form>
+
+      <p class="texto-cadastro mt-3">
+        Não tem uma conta?
+        <a href="#" class="link-cadastro text-decoration-none fw-semibold">
+          Cadastre-se
+        </a>
+      </p>
+
+    </div>
+
+    <p class="texto-termos mt-3 small">
+      Ao fazer login, você concorda com nossos
+      <a href="#" class="text-decoration-none">Termos de Uso</a>
+      e
+      <a href="#" class="text-decoration-none">Política de Privacidade</a>
+    </p>
+
+  </div>
+</section>
     <!-- RODAPÉ -->
     <footer class="section-footer py-5">
       <div class="container">
