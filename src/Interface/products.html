@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
@@ -22,8 +22,10 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
+    <script type="module" src="/src/main.js"></script>
+    <link rel="stylesheet" href="/src/style.css" />
   </head>
-
+  <body>
     <!-- HEADER TOP - Informações de contato -->
     <div class="header-top">
       <div class="container">
@@ -46,7 +48,7 @@
         </div>
 
         <nav class="main-nav">
-         <a href="../index.html">Início</a>
+          <a href="../index.html">Início</a>
           <a href="../Interface/products.html">Produtos</a>
           <a href="../Interface/offers.html">Ofertas</a>
           <a href="../Interface/about.html">Sobre Nós</a>
@@ -58,150 +60,153 @@
     </header>
 
     <!-- SEÇÃO PRODUTOS -->
-<main class="pagina-produtos">
-  <!-- CABEÇALHO -->
-  <header class="cabecalho-produtos">
-    <h1>Nossos Produtos</h1>
-    <p>Carnes selecionadas com certificação de qualidade e frescor garantido.</p>
-  </header>
+    <main class="pagina-produtos">
+      <!-- CABEÇALHO -->
+      <header class="cabecalho-produtos">
+        <h1>Nossos Produtos</h1>
+        <p>
+          Carnes selecionadas com certificação de qualidade e frescor garantido.
+        </p>
+      </header>
 
-  <!-- BARRA DE BUSCA -->
-  <div class="container-busca">
-    <span class="icone-busca"></span>
-    <input
-      type="text"
-      class="campo-busca"
-      placeholder="Buscar produtos..."
-      id="busca"
-    />
-  </div>
-
-  <!-- FILTROS -->
-  <div class="botoes-filtro">
-    <button class="botao-filtro ativo" data-categoria="todos">Todos</button>
-    <button class="botao-filtro" data-categoria="bovino">Bovino</button>
-    <button class="botao-filtro" data-categoria="suino">Suíno</button>
-    <button class="botao-filtro" data-categoria="aves">Aves</button>
-    <button class="botao-filtro" data-categoria="kits">Kits Especiais</button>
-  </div>
-
-  <!-- GRID -->
-  <section class="grid-produtos" id="listaProdutos">
-
-    <!-- PRODUTO 1 -->
-    <div class="cartao-produto" data-tipo="bovino">
-      <div class="area-img-produto">
-        <span class="badge-oferta">Oferta</span>
-        <img
-          src="../assets/Cards-Produtos/picanha-products.png"
-          class="img-produto"
-          alt="Picanha Premium"
+      <!-- BARRA DE BUSCA -->
+      <div class="container-busca">
+        <span class="icone-busca"></span>
+        <input
+          type="text"
+          class="campo-busca"
+          placeholder="Buscar produtos..."
+          id="busca"
         />
       </div>
 
-      <div class="info-produto">
-        <span class="categoria-produto">Bovino</span>
-        <h3 class="nome-produto">Picanha Premium</h3>
-        <p class="descricao-produto">Picanha argentina macia e suculenta.</p>
+      <!-- FILTROS -->
+      <div class="botoes-filtro">
+        <button class="botao-filtro ativo" data-categoria="todos">Todos</button>
+        <button class="botao-filtro" data-categoria="bovino">Bovino</button>
+        <button class="botao-filtro" data-categoria="suino">Suíno</button>
+        <button class="botao-filtro" data-categoria="aves">Aves</button>
+        <button class="botao-filtro" data-categoria="kits">
+          Kits Especiais
+        </button>
+      </div>
 
-        <div class="preco-produto">
-          <span class="preco-antigo">R$ 109,90</span>
-          <span class="preco-atual">R$ 89,90</span>
-          <span class="unidade-preco">/kg</span>
+      <!-- GRID -->
+      <section class="grid-produtos" id="listaProdutos">
+        <!-- PRODUTO 1 -->
+        <div class="cartao-produto" data-tipo="bovino">
+          <div class="area-img-produto">
+            <span class="badge-oferta">Oferta</span>
+            <img
+              src="../assets/Cards-Produtos/picanha-products.png"
+              class="img-produto"
+              alt="Picanha Premium"
+            />
+          </div>
+
+          <div class="info-produto">
+            <span class="categoria-produto">Bovino</span>
+            <h3 class="nome-produto">Picanha Premium</h3>
+            <p class="descricao-produto">
+              Picanha argentina macia e suculenta.
+            </p>
+
+            <div class="preco-produto">
+              <span class="preco-antigo">R$ 109,90</span>
+              <span class="preco-atual">R$ 89,90</span>
+              <span class="unidade-preco">/kg</span>
+            </div>
+
+            <button class="btn-adicionar">Adicionar ao Pedido</button>
+          </div>
         </div>
 
-        <button class="btn-adicionar">Adicionar ao Pedido</button>
-      </div>
-    </div>
+        <!-- PRODUTO 2 -->
+        <div class="cartao-produto" data-tipo="bovino">
+          <img
+            src="../assets/Cards-Produtos/costela-procuts.png"
+            class="img-produto"
+            alt="Costela Bovina"
+          />
+          <div class="info-produto">
+            <span class="categoria-produto">Bovino</span>
+            <h3 class="nome-produto">Costela Bovina</h3>
+            <p class="descricao-produto">Costela perfeita para churrasco.</p>
 
-    <!-- PRODUTO 2 -->
-    <div class="cartao-produto" data-tipo="bovino">
-      <img
-        src="../assets/Cards-Produtos/costela-procuts.png"
-        class="img-produto"
-        alt="Costela Bovina"
-      />
-      <div class="info-produto">
-        <span class="categoria-produto">Bovino</span>
-        <h3 class="nome-produto">Costela Bovina</h3>
-        <p class="descricao-produto">Costela perfeita para churrasco.</p>
+            <div class="preco-produto">
+              <span class="preco-atual">R$ 45,90</span>
+              <span class="unidade-preco">/kg</span>
+            </div>
 
-        <div class="preco-produto">
-          <span class="preco-atual">R$ 45,90</span>
-          <span class="unidade-preco">/kg</span>
+            <button class="btn-adicionar">Adicionar ao Pedido</button>
+          </div>
         </div>
 
-        <button class="btn-adicionar">Adicionar ao Pedido</button>
-      </div>
-    </div>
+        <!-- PRODUTO 3 -->
+        <div class="cartao-produto" data-tipo="aves">
+          <img
+            src="../assets/Cards-Produtos/frango-resfriado-products.png"
+            class="img-produto"
+            alt="Frango Resfriado"
+          />
+          <div class="info-produto">
+            <span class="categoria-produto">Aves</span>
+            <h3 class="nome-produto">Frango Resfriado</h3>
+            <p class="descricao-produto">Ideal para receitas do dia a dia.</p>
 
-    <!-- PRODUTO 3 -->
-    <div class="cartao-produto" data-tipo="aves">
-      <img
-        src="../assets/Cards-Produtos/frango-resfriado-products.png"
-        class="img-produto"
-        alt="Frango Resfriado"
-      />
-      <div class="info-produto">
-        <span class="categoria-produto">Aves</span>
-        <h3 class="nome-produto">Frango Resfriado</h3>
-        <p class="descricao-produto">Ideal para receitas do dia a dia.</p>
+            <div class="preco-produto">
+              <span class="preco-atual">R$ 11,90</span>
+              <span class="unidade-preco">/kg</span>
+            </div>
 
-        <div class="preco-produto">
-          <span class="preco-atual">R$ 11,90</span>
-          <span class="unidade-preco">/kg</span>
+            <button class="btn-adicionar">Adicionar ao Pedido</button>
+          </div>
         </div>
 
-        <button class="btn-adicionar">Adicionar ao Pedido</button>
-      </div>
-    </div>
+        <!-- PRODUTO 4 -->
+        <div class="cartao-produto" data-tipo="kits">
+          <img
+            src="../assets/Cards-Produtos/kit-churrasco-products.png"
+            class="img-produto"
+            alt="Kits Especiais para churrasco"
+          />
+          <div class="info-produto">
+            <span class="categoria-produto">Kits Especiais</span>
+            <h3 class="nome-produto">Kit Para Churrasco</h3>
+            <p class="descricao-produto">Ideal para compartilhar.</p>
 
+            <div class="preco-produto">
+              <span class="preco-atual">R$ 149,90</span>
+              <span class="unidade-preco">/kg</span>
+            </div>
 
-<!-- PRODUTO 4 -->
-    <div class="cartao-produto" data-tipo="kits">
-      <img
-        src="../assets/Cards-Produtos/kit-churrasco-products.png"
-        class="img-produto"
-        alt="Kits Especiais para churrasco"
-      />
-      <div class="info-produto">
-        <span class="categoria-produto">Kits Especiais</span>
-        <h3 class="nome-produto">Kit Para Churrasco</h3>
-        <p class="descricao-produto">Ideal para compartilhar.</p>
-
-        <div class="preco-produto">
-          <span class="preco-atual">R$ 149,90</span>
-          <span class="unidade-preco">/kg</span>
+            <button class="btn-adicionar">Adicionar ao Pedido</button>
+          </div>
         </div>
 
-        <button class="btn-adicionar">Adicionar ao Pedido</button>
-      </div>
-    </div>
-
-    <!-- Produto 5 -->
+        <!-- Produto 5 -->
 
         <div class="cartao-produto" data-tipo="suino">
-      <img
-        src="../assets/Cards-Produtos/panceta-products.png"
-        class="img-produto"
-        alt="Kits Especiais para churrasco"
-      />
-      <div class="info-produto">
-        <span class="categoria-produto">Suíno</span>
-        <h3 class="nome-produto">Panceta Premium</h3>
-        <p class="descricao-produto">Panceta deliciosa e suculenta.</p>
+          <img
+            src="../assets/Cards-Produtos/panceta-products.png"
+            class="img-produto"
+            alt="Kits Especiais para churrasco"
+          />
+          <div class="info-produto">
+            <span class="categoria-produto">Suíno</span>
+            <h3 class="nome-produto">Panceta Premium</h3>
+            <p class="descricao-produto">Panceta deliciosa e suculenta.</p>
 
-        <div class="preco-produto">
-          <span class="preco-atual">R$ 39,90</span>
-          <span class="unidade-preco">/kg</span>
+            <div class="preco-produto">
+              <span class="preco-atual">R$ 39,90</span>
+              <span class="unidade-preco">/kg</span>
+            </div>
+
+            <button class="btn-adicionar">Adicionar ao Pedido</button>
+          </div>
         </div>
-
-        <button class="btn-adicionar">Adicionar ao Pedido</button>
-      </div>
-    </div>
-
-  </section>
-</main>
+      </section>
+    </main>
 
     <!-- SESSAO: RODAPE -->
     <section class="section-footer">

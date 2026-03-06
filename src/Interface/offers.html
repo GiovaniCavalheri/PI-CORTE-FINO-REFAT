@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
@@ -31,6 +31,8 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
+    <script type="module" src="/src/main.js"></script>
+    <link rel="stylesheet" href="/src/style.css" />
   </head>
 
   <body>
@@ -58,7 +60,7 @@
         </div>
 
         <nav class="main-nav">
-         <a href="../index.html">Início</a>
+          <a href="../index.html">Início</a>
           <a href="../Interface/products.html">Produtos</a>
           <a href="../Interface/offers.html">Ofertas</a>
           <a href="../Interface/about.html">Sobre Nós</a>
@@ -70,43 +72,48 @@
     </header>
 
     <!-- OFERTAS -->
-<section class="offers">
-  <h2>Ofertas da Semana</h2>
+    <section class="offers">
+      <h2>Ofertas da Semana</h2>
 
-  <div class="offers-grid">
+      <div class="offers-grid">
+        <div class="offers-card">
+          <img
+            src="../assets/Cards-Offers/file-mignonpromo.png"
+            alt="Filé Mignon de alta qualidade"
+          />
+          <h3>Filé Mignon</h3>
+          <p class="descricao-oferta">
+            Corte nobre extremamente macio, ideal para grelhar ou assar.
+          </p>
+          <p class="antigo">R$ 119,90/kg</p>
+          <p class="novo">R$ 99,90/kg</p>
+        </div>
 
-    <div class="offers-card">
-      <img
-        src="../assets/Cards-Offers/file-mignonpromo.png"
-        alt="Filé Mignon de alta qualidade"
-      />
-      <h3>Filé Mignon</h3>
-      <p class="descricao-oferta">Corte nobre extremamente macio, ideal para grelhar ou assar.</p>
-      <p class="antigo">R$ 119,90/kg</p>
-      <p class="novo">R$ 99,90/kg</p>
-    </div>
+        <div class="offers-card">
+          <img src="../assets/Cards-Offers/alcatra.png" alt="Alcatra fresca" />
+          <h3>Alcatra</h3>
+          <p class="descricao-oferta">
+            Versátil e saborosa, perfeita para churrasco ou receitas do dia a
+            dia.
+          </p>
+          <p class="antigo">R$ 54,90/kg</p>
+          <p class="novo">R$ 34,90/kg</p>
+        </div>
 
-    <div class="offers-card">
-      <img src="../assets/Cards-Offers/alcatra.png" alt="Alcatra fresca">
-      <h3>Alcatra</h3>
-      <p class="descricao-oferta">Versátil e saborosa, perfeita para churrasco ou receitas do dia a dia.</p>
-      <p class="antigo">R$ 54,90/kg</p>
-      <p class="novo">R$ 34,90/kg</p>
-    </div>
-
-    <div class="offers-card">
-      <img
-        src="../assets/Cards-Offers/picanha.png"
-        alt="Picanha premium selecionada"
-      />
-      <h3>Picanha Premium</h3>
-      <p class="descricao-oferta">Corte especial com marmoreio perfeito para um churrasco suculento.</p>
-      <p class="antigo">R$ 109,90/kg</p>
-      <p class="novo">R$ 89,90/kg</p>
-    </div>
-
-  </div>
-</section>
+        <div class="offers-card">
+          <img
+            src="../assets/Cards-Offers/picanha.png"
+            alt="Picanha premium selecionada"
+          />
+          <h3>Picanha Premium</h3>
+          <p class="descricao-oferta">
+            Corte especial com marmoreio perfeito para um churrasco suculento.
+          </p>
+          <p class="antigo">R$ 109,90/kg</p>
+          <p class="novo">R$ 89,90/kg</p>
+        </div>
+      </div>
+    </section>
 
     <!-- FOOTER -->
     <section class="section-footer">
