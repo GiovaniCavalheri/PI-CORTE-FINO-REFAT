@@ -1264,141 +1264,55 @@
 
 /* ============ PAGINA DE JOIN =========== */
 
-/* FUNDO */
 .secao-login {
-  width: 100%;
-  min-height: 100vh;
   background: var(--cor-primaria);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 40px 20px;
 }
 
-/* CONTAINER */
-.container-login {
-  text-align: center;
-}
-
-/* LOGO */
-.login-logo {
-  width: 70%;
-  margin-bottom: 20px;
-}
-
-/* CARD */
 .card-login {
-  width: 380px;
-  background: #fff;
-  padding: 32px;
-  border-radius: 14px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-  margin: 0 auto;
+  background: #ffffff;
 }
 
-/* TÍTULOS */
 .titulo-login {
-  font-size: 22px;
-  font-weight: 700;
   color: var(--cor-texto);
 }
 
 .descricao-login {
   color: #6d5d55;
-  font-size: 14px;
-  margin-bottom: 25px;
-}
-
-/* FORM */
-.form-login {
-  text-align: left;
-  width: 100%;
 }
 
 .form-login label {
   color: var(--cor-texto);
-  font-size: 14px;
-  margin-bottom: 5px;
-  display: block;
-}
-
-.linha-input {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.link-esqueci {
-  font-size: 13px;
-  color: #853439;
-  text-decoration: none;
 }
 
 .form-login input {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 18px;
-  border-radius: 8px;
-  border: 1px solid #d7c7b8;
   background: var(--cor-primaria);
   color: var(--cor-texto);
+  border-color: #d7c7b8;
 }
 
 .form-login input:focus {
-  outline: none;
   border-color: #853439;
 }
 
 .btn-login {
-  width: 100%;
-  padding: 12px;
   background: #853439;
-  color: white;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  font-weight: 600;
-  transition: 0.25s ease;
+  color: #ffffff;
 }
 
 .btn-login:hover {
   background: #9b3e44;
-  transform: scale(1.03);
+}
+
+.link-esqueci,
+.link-cadastro,
+.texto-termos a {
+  color: #853439;
 }
 
 .texto-cadastro {
-  margin-top: 14px;
-  font-size: 14px;
   color: #6d5d55;
 }
 
-.link-cadastro {
-  color: #853439;
-  font-weight: 600;
-  text-decoration: none;
-}
-
 .texto-termos {
-  margin-top: 18px;
-  font-size: 12px;
   color: #7a6a63;
-}
-
-.texto-termos a {
-  color: #853439;
-  text-decoration: none;
-}
-
-.destaque-vermelho {
-  color: var(--cor-texto);
-  border-radius: 6px;
-  font-weight: 600;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-.destaque-vermelho:hover {
-  background-color: #ffffff;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(220, 38, 38, 0.3);
 }
