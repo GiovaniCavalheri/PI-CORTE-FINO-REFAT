@@ -1,236 +1,203 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Corte Fino - Contato</title>
 
-    <link rel="stylesheet" href="../styles/style.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Corte Fino - Açougue Gourmet</title>
+  <link rel="stylesheet" href="../styles/style.css" />
+  <link rel="shortcut icon" href="../assets/favicon-page/favicon-corte-fino.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
 
-    <link
-      rel="shortcut icon"
-      href="../assets/favicon-page/favicon-corte-fino.ico"
-      type="image/x-icon"
-    />
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    />
-
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
-      rel="stylesheet"
-    />
-    <script type="module" src="/src/main.js"></script>
-    <link rel="stylesheet" href="/src/style.css" />
-  </head>
-
-  <body>
-    <!-- ========== HEADER TOP ========== -->
-    <section class="header-top">
+<body style="background-color: #e6dcd1;">
+  <section>
+    <!-- HEADER TOP - Informações de contato -->
+    <div class="header-top">
       <div class="container">
         <i class="fas fa-phone"></i> (18) 4002-8922
         <span class="divisor">|</span>
         <i class="fa-solid fa-clock"></i> Seg-Sab: 7h-19h | Dom: 7h-13h
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- ========== HEADER PRINCIPAL ========== -->
+  <section>
+    <!-- HEADER PRINCIPAL - Logo e Navegação -->
     <header class="main-header">
       <div class="container">
         <div class="logo-area">
-          <img
-            class="img-header-logo"
-            src="../assets/logo-c-f.png"
-            alt="Logo Corte Fino"
-          />
+          <img class="img-header-logo" src="../assets/icon-Corte-Fino.ico"
+            alt="Icone da Logo Açougue Corte fino, com cores vibrantes em bege e vermelho, representando um machado cortando um pedaço de carne " />
           <h1>Corte Fino</h1>
         </div>
 
         <nav class="main-nav">
-          <a href="../index.html">Início</a>
-          <a href="../Interface/products.html">Produtos</a>
-          <a href="../Interface/offers.html">Ofertas</a>
-          <a href="../Interface/about.html">Sobre Nós</a>
-          <a href="../Interface/services.html">Serviços</a>
-          <a href="../Interface/contact.html">Contato</a>
-          <a href="../Interface/Join.html" class="destaque-vermelho">Entrar</a>
+          <a href="./init.html">Início</a>
+          <a href="./products.html">Produtos</a>
+          <a href="./offers.html">Ofertas</a>
+          <a href="./about.html">Sobre Nós</a>
+          <a href="./services.html">Serviços</a>
+          <a href="./contact.html">Contato</a>
         </nav>
       </div>
     </header>
+    <!-- ====================== SESSÃO CONTATO ======================= -->
+  </section>
 
-    <!-- ========== SESSÃO CONTATO ========== -->
-    <div id="global-style">
-      <section class="secao-contato">
-        <h1 class="titulo-contato">Entre em Contato</h1>
-        <p class="texto-introducao">
-          Estamos prontos para atender você. Escolha a melhor forma de contato.
-        </p>
+  <section class="contato-page container my-5">
+    <div class="row g-4">
 
-        <h2 class="subtitulo">Envie sua Mensagem</h2>
+      <!-- FORMULÁRIO -->
+      <div class="col-lg-7">
+        <div class="card-contato p-4">
 
-        <form class="formulario-contato">
-          <div class="campo">
-            <label for="name">Nome Completo</label>
-            <input type="text" id="name" placeholder="Seu nome" />
-          </div>
+          <h2 class="mb-2">Entre em Contato</h2>
+          <p class="text-muted mb-4">
+            Preencha o formulário e nossa equipe retornará o mais rápido possível.
+          </p>
 
-          <div class="campo">
-            <label for="email">E-mail</label>
-            <input
-              type="email"
-              id="email"
-              placeholder="seu@email.com"
-              required
-            />
-          </div>
+          <form class="row g-3">
 
-          <div class="campo">
-            <label for="phone">Telefone</label>
-            <input
-              type="text"
-              id="phone"
-              placeholder="(18) 4002-8922"
-              required
-            />
-          </div>
+            <div class="col-md-6">
+              <label class="form-label">Nome</label>
+              <input type="text" class="form-control" placeholder="Seu nome" />
+            </div>
 
-          <div class="campo">
-            <label for="assunt">Assunto</label>
-            <input
-              type="text"
-              id="assunt"
-              placeholder="Como podemos ajudar?"
-              required
-            />
-          </div>
+            <div class="col-md-6">
+              <label class="form-label">E-mail</label>
+              <input type="email" class="form-control" placeholder="seu@email.com" />
+            </div>
 
-          <div class="campo campo-mensagem">
-            <label for="message">Mensagem</label>
-            <textarea
-              id="message"
-              placeholder="Descreva sua necessidade ou mensagem"
-            ></textarea>
-          </div>
+            <div class="col-md-6">
+              <label class="form-label">Telefone</label>
+              <input type="text" class="form-control" />
+            </div>
 
-          <button class="botao-enviar">Enviar Mensagem</button>
-        </form>
-      </section>
+            <div class="col-md-6">
+              <label class="form-label">Assunto</label>
+              <input type="text" class="form-control" />
+            </div>
 
-      <!-- ========== CARD WHATSAPP ========== -->
-      <section class="card-whats">
-        <h3 class="titulo-whats">Atendimento Rápido</h3>
-        <p>
-          Prefere falar diretamente conosco? Clique no botão abaixo para iniciar
-          o WhatsApp.
-        </p>
+            <div class="col-12">
+              <label class="form-label">Mensagem</label>
+              <textarea class="form-control" rows="4"></textarea>
+            </div>
 
-        <a href="https://wa.me/5518997732006" class="botao-whats">
-          Falar no WhatsApp</a
-        >
-      </section>
+            <div class="col-12">
+              <button class="btn btn-dark w-100">
+                Enviar mensagem
+              </button>
+            </div>
 
-      <!-- ========== INFORMAÇÕES + MAPA ========== -->
-      <section class="informacoes-container">
-        <div class="bloco-informacoes">
-          <h3>Telefone</h3>
-          <p>(18) 4002-8922</p>
+          </form>
+        </div>
+      </div>
 
-          <h3>E-mail</h3>
-          <p>cortefinoprimary@gmail.com</p>
+      <!-- LADO DIREITO (INFO + WHATS + MAPA) -->
+      <div class="col-lg-5">
 
-          <h3>Endereço</h3>
+        <div class="card-contato p-4 mb-4">
+          <h4>Informações</h4>
+          <p><i class="fa-solid fa-phone"></i> (18) 4002-8922</p>
+          <p><i class="fa-solid fa-envelope"></i> cortefinoprimary@gmail.com</p>
+          <p><i class="fa-solid fa-location-dot"></i> Presidente Prudente - SP</p>
+        </div>
+
+        <div class="card-whats-novo p-4 mb-4 text-center">
+          <h5>Atendimento rápido</h5>
+          <p>Fale conosco direto no WhatsApp</p>
+          <a href="#" class="btn btn-success w-100">
+            💬 WhatsApp
+          </a>
+        </div>
+
+        <div class="card-contato p-3 text-center">
+          <h5>Localização</h5>
+          <img src="../assets/map/image.png" class="img-fluid rounded mt-2" />
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== RODAPE ======================= -->
+  <section class="section-footer">
+    <div class="container">
+      <div class="footer-conteudo">
+        <!-- c1 -->
+        <div class="column1">
+          <h2>Corte Fino</h2>
           <p>
-            Rua dos Girassois, 124<br />Presidente Prudente - SP<br />CEP:
-            19010-081
+            Qualidade e Frescor premium em cada corte. Tradição e excelência
+            desde 1995.
           </p>
         </div>
 
-        <div class="mapa-container">
-          <h2>Localização</h2>
-          <img src="../assets/map/image.png" alt="Mapa Corte Fino" />
-        </div>
-      </section>
-    </div>
-    <!-- SESSAO: RODAPE   -->
-    <section class="section-footer">
-      <div class="container">
-        <div class="footer-conteudo">
-          <!-- c1 -->
-          <div class="column1">
-            <h2>Corte Fino</h2>
-            <p>
-              Qualidade e Frescor premium em cada corte. Tradição e excelência
-              desde 1995.
-            </p>
-          </div>
-
-          <!-- c2 -->
-          <div class="column2">
-            <h2>Links Rápidos</h2>
-            <ul>
-              <ol>
-                <a href="./products.html">Produtos</a>
-              </ol>
-              <ol>
-                <a href="./offers.html">Ofertas</a>
-              </ol>
-              <ol>
-                <a href="./about.html">Sobre Nós</a>
-              </ol>
-              <ol>
-                <a href="./services.html">Serviços</a>
-              </ol>
-              <ol>
-                <a href="./contact.html">Contato</a>
-              </ol>
-              <ol>
-                <a href="#logout">
-                  <i class="fa-solid fa-arrow-right-from-bracket"></i> Sair
-                </a>
-              </ol>
-            </ul>
-          </div>
-
-          <!-- c3 -->
-          <div class="column3">
-            <h2>Contato</h2>
-            <p><i class="fa-solid fa-phone"></i> (18) 4002-8922</p>
-            <p>
-              <i class="fa-solid fa-envelope"></i>
-              <a href="mailto:cortefinoprimary@gmail.com">
-                cortefinoprimary@gmail.com
+        <!-- c2 -->
+        <div class="column2">
+          <h2>Links Rápidos</h2>
+          <ul>
+            <ol>
+              <a href="#products">Produtos</a>
+            </ol>
+            <ol>
+              <a href="#offers">Ofertas</a>
+            </ol>
+            <ol>
+              <a href="#about">Sobre Nós</a>
+            </ol>
+            <ol>
+              <a href="#services">Serviços</a>
+            </ol>
+            <ol>
+              <a href="#contact">Contato</a>
+            </ol>
+            <ol>
+              <a href="#logout">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i> Sair
               </a>
-            </p>
-            <p>
-              <i class="fa-solid fa-location-dot"></i> Rua dos Girassois, 124<br />
-              Presidente Prudente - SP
-            </p>
-          </div>
-          <!-- c4 -->
-          <div class="column4">
-            <h2>Horário de Funcionamento</h2>
-            <p>
-              <i class="fa-solid fa-clock"></i> Seg-Sáb: 7h às 19h <br />
-              Domingo: 7h às 13h
-            </p>
-            <p><i class="fa-brands fa-instagram"></i> Corte Fino</p>
-          </div>
+            </ol>
+          </ul>
         </div>
-        <hr />
-        <p style="text-align: center; padding: 10px 0">
-          © 2025 Açougue Corte Fino. Todos os direitos reservados.
-        </p>
+
+        <!-- c3 -->
+        <div class="column3">
+          <h2>Contato</h2>
+          <p><i class="fa-solid fa-phone"></i> (18) 4002-8922</p>
+          <p>
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:cortefinoprimary@gmail.com">
+              cortefinoprimary@gmail.com
+            </a>
+          </p>
+          <p>
+            <i class="fa-solid fa-location-dot"></i> Rua dos Girassois, 124<br />
+            Presidente Prudente - SP
+          </p>
+        </div>
+        <!-- c4 -->
+        <div class="column4">
+          <h2>Horário de Funcionamento</h2>
+          <p>
+            <i class="fa-solid fa-clock"></i> Seg-Sáb: 7h às 19h <br />
+            Domingo: 7h às 13h
+          </p>
+          <p><i class="fa-brands fa-instagram"></i> Corte Fino</p>
+        </div>
       </div>
-    </section>
-  </body>
+      <hr />
+      <p style="text-align: center; padding: 10px 0">
+        © 2025 Açougue Corte Fino. Todos os direitos reservados.
+      </p>
+    </div>
+  </section>
+  <script src="../scripts/contact.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>

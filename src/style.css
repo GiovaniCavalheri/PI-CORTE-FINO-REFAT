@@ -1316,3 +1316,185 @@
 .texto-termos {
   color: #7a6a63;
 }
+/* ================= CONTATO (ISOLADO) ================= */
+
+
+.contato-page .secao-contato {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+  animation: fadeUp 0.6s ease;
+}
+
+
+.contato-page .titulo-contato {
+  font-size: 34px;
+  font-weight: 700;
+  color: #2e1a16;
+}
+
+
+.contato-page .formulario-contato {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+
+.contato-page .campo-mensagem {
+  grid-column: span 2;
+}
+
+
+.contato-page .botao-enviar {
+  grid-column: span 2;
+  background: #822b31;
+  transition: 0.3s;
+}
+
+
+.contato-page .botao-enviar:hover {
+  transform: translateY(-2px);
+  background: #a33a41;
+}
+
+
+/* INPUT BONITO */
+.contato-page input,
+.contato-page textarea {
+  border: 1px solid #ddd;
+  transition: 0.2s;
+}
+
+
+.contato-page input:focus,
+.contato-page textarea:focus {
+  border-color: #822b31;
+  box-shadow: 0 0 0 3px rgba(130,43,49,0.15);
+  outline: none;
+}
+
+
+/* WHATS CARD */
+.contato-page .card-whats {
+  transition: 0.3s;
+}
+
+
+.contato-page .card-whats:hover {
+  transform: translateY(-5px);
+}
+
+
+/* INFORMAÇÕES */
+.contato-page .informacoes-container {
+  grid-template-columns: 1fr 1fr;
+}
+
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .contato-page .formulario-contato {
+    grid-template-columns: 1fr;
+  }
+
+
+  .contato-page .campo-mensagem,
+  .contato-page .botao-enviar {
+    grid-column: span 1;
+  }
+
+
+  .contato-page .informacoes-container {
+    grid-template-columns: 1fr;
+  }
+
+
+  .contato-page .secao-contato {
+    padding: 20px;
+  }
+}
+
+
+/* ANIMAÇÃO */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* ===== NOVO VISUAL CONTATO ===== */
+
+
+.contato-page .card-contato {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 35px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+
+.contato-page .card-contato:hover {
+  transform: translateY(-5px);
+}
+
+
+.contato-page h2 {
+  font-weight: 700;
+  color: #2e1a16;
+}
+
+
+.contato-page input,
+.contato-page textarea {
+  border-radius: 8px;
+  padding: 10px;
+}
+
+
+.contato-page input:focus,
+.contato-page textarea:focus {
+  border-color: #822b31;
+  box-shadow: 0 0 0 3px rgba(130,43,49,0.15);
+}
+
+
+/* BOTÃO */
+.contato-page .btn-dark {
+  background-color: #822b31;
+  border: none;
+  transition: 0.3s;
+}
+
+
+.contato-page .btn-dark:hover {
+  background-color: #a33a41;
+}
+
+
+/* WHATS NOVO */
+.card-whats-novo {
+  background: linear-gradient(135deg, #1bc451, #179f42);
+  color: white;
+  border-radius: 16px;
+}
+
+
+.card-whats-novo h5 {
+  font-weight: 600;
+}
+
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .contato-page {
+    padding: 10px;
+  }
+}
