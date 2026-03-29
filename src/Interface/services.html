@@ -50,14 +50,27 @@
   <nav class="navbar navbar-expand-lg main-header sticky-top">
     <div class="container">
       <a class="navbar-brand logo-area" href="/index.html">
-        <img src="/src/public/logo-c-f.png" style="height: 60px" />
+        <img
+          src="/src/public/logo-c-f.png"
+          style="height: 60px"
+          alt="Logo Corte Fino"
+        />
         <span class="fs-3 fw-semibold">Corte Fino</span>
       </a>
-
-      <div class="collapse navbar-collapse">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#menuPrincipal"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menuPrincipal">
         <ul class="nav nav-pills ms-auto">
           <li class="nav-item">
-            <a href="/index.html" class="nav-link">Início</a>
+            <a href="/index.html" class="nav-link active" aria-current="page"
+              >Início</a
+            >
           </li>
           <li class="nav-item">
             <a href="/src/Interface/products.html" class="nav-link">Produtos</a>
@@ -69,9 +82,7 @@
             <a href="/src/Interface/about.html" class="nav-link">Sobre Nós</a>
           </li>
           <li class="nav-item">
-            <a href="/src/Interface/services.html" class="nav-link active"
-              >Serviços</a
-            >
+            <a href="/src/Interface/services.html" class="nav-link">Serviços</a>
           </li>
           <li class="nav-item">
             <a href="/src/Interface/contact.html" class="nav-link">Contato</a>
@@ -152,10 +163,11 @@
     <section class="cta-section text-center py-5">
       <h2>Precisa de um serviço personalizado?</h2>
       <p>Nossa equipe está pronta para te atender.</p>
-      <button class="btn-events mt-3 py-2">Falar com Especialista</button>
+      <a href="https://wa.me/5518997732006?text=Olá%20Corte%20Fino,%20gostaria%20de%20solicitar%20atendimento%20para%20um%20serviço%20personalizado.">
+      <button class="btn-events mt-3 py-2" type="submit">Falar com Especialista</button>
+      </a>
     </section>
 
-    <!-- FOOTER -->
     <!-- RODAPÉ -->
     <footer class="section-footer py-5">
       <div class="container">
