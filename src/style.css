@@ -296,6 +296,7 @@
   margin-bottom: 40px;
   color: var(--cor-texto);
   font-size: 36px;
+  font-family: var(--font-principal);
 }
 
 /* GRID */
@@ -555,23 +556,7 @@
   background-color: var(--cor-primaria);
 }
 
-/* TÍTULO */
-.cabecalho-produtos {
-  padding: 30px;
-  text-align: center;
-}
 
-.cabecalho-produtos h1 {
-  font-size: 36px;
-  font-weight: 700;
-  color: var(--cor-texto);
-}
-
-.cabecalho-produtos p {
-  color: var(--cor-texto);
-  margin-top: 8px;
-  font-weight: 100;
-}
 
 /* BUSCA */
 .container-busca {
