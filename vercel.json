@@ -1,15 +1,57 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "index.js",
-      "use": "@vercel/node"
-    }
-  ],
   "routes": [
     {
+      "src": "/scripts/(.*)",
+      "dest": "/src/scripts/$1"
+    },
+    {
+      "src": "/style.css",
+      "dest": "/src/style.css"
+    },
+    {
+      "src": "/about",
+      "dest": "/src/Interface/about.html"
+    },
+    {
+      "src": "/adm",
+      "dest": "/src/Interface/adm.html"
+    },
+    {
+      "src": "/cadastro",
+      "dest": "/src/Interface/cadastro.html"
+    },
+    {
+      "src": "/contact",
+      "dest": "/src/Interface/contact.html"
+    },
+    {
+      "src": "/join",
+      "dest": "/src/Interface/Join.html"
+    },
+    {
+      "src": "/offers",
+      "dest": "/src/Interface/offers.html"
+    },
+    {
+      "src": "/pag-adm",
+      "dest": "/src/Interface/pag-adm.html"
+    },
+    {
+      "src": "/products",
+      "dest": "/src/Interface/products.html"
+    },
+    {
+      "src": "/services",
+      "dest": "/src/Interface/services.html"
+    },
+    {
+      "src": "/signatures",
+      "dest": "/src/Interface/signatures.html"
+    },
+    {
       "src": "/(.*)",
-      "dest": "index.js"
+      "dest": "/index.html"
     }
   ]
 }
